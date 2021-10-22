@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --light-red-text: #ff525d;
+  --very-light-redctahoverback: #ff7a85;
+  --very-dark-blueheadings: #1f3f5b;
+
+  /* ### Neutral */
+  --grayish-bluefootertext: #c8c8cb;
+  --very-dark-grayish-bluebodycopy: #4b5862;
+  --very-dark-black-bluefooterback: #25252d;
+
+  /* ### Gradient */
+  /* Background gradient - Intro/CTA mobile nav: */
+  --very-light-red: #ff8f70;
+  --light-red: #ff3d54;
+
+  /* Background gradient - body: */
+  --very-dark-gray-blue: #2c2d3f;
+  --very-dark-desaturated-blue: #3f4164;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 40em) {
+  html {
+    font-size: 60%;
+  }
 }
